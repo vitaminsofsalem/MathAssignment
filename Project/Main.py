@@ -7,9 +7,8 @@ method = int(input("Enter 1 for traps / 2 for simps13 / 3 for simps38: "))
 function = input("Enter function as numexpr notation: ")
 
 def f(x):
-    return ne.evaluate(function, local_dict = {'pi' : 3.141492})
-    
-x = 1
+    function1 = ne.evaluate(function)
+    return function1    
 
 if (method == 1):
     def traps (a, b, n):
